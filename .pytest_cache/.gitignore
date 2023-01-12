@@ -1,0 +1,4 @@
+# Created by pytest automatically.
+*.exe
+geckodriver.log
+**/__pycache__

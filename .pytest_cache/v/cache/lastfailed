@@ -1,0 +1,7 @@
+{
+  "tests/tests_negative.py::test_checkout_product_guess": true,
+  "tests/tests_final.py::test_checkout_product_guess": true,
+  "tests/tests_final.py::test_no_product_shopping_cart": true,
+  "tests/tests_final.py::test_eliminar_product_shopping_cart": true,
+  "tests/tests_final.py::test_fulfillment_2": true
+}
