@@ -1,10 +1,14 @@
 import factories_drivers.factory_driver as f_driver
 from pages.menu_page import MenuPage
 from pages.base_page import BasePage
+
 from pages.search_page import SearchPage
 from pages.login_page import LoginPage
 from pages.register_page import RegisterPage
 from pages.product_page import ProductPage
+
+from pages.myaccount_page import MyAccountPage 
+from selenium.webdriver.common.by import By
 import time
 
 
@@ -147,6 +151,20 @@ def test_register_email_duplicado():
     time.sleep(2)
     register_page.verificar_confirmacion(confirmation_text)
     time.sleep(2)
+
+def testCase1_busqueda():
+    producto = 'Display'
+    busqueda_invalida_text = 'There is no product that matches the search criteria.'
+    menu_page = MenuPage(driver) 
+    menu_page.buscar_producto(producto)
+    search_page = SearchPage(driver)
+    search_page.verificar_no_producto(busqueda_invalida_text)
+    search_page.check_product_description()
+    search_page.click_search()
+    #menu_page.back_landingpage()
+    home_page=driver.find_element(By.XPATH,'/html/body/div[2]/ul/li[1]/a/i')
+    home_page.click()
+    time.sleep(10)
 
 def teardown():
     BasePage(driver).close_browser()

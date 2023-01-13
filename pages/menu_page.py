@@ -130,3 +130,6 @@ class MenuPage(BasePage):
         self._is_visible(phones_option, 'La opcion Phones & PDAs no se encuentra visible') 
         self._is_enabled(phones_option, 'La opcion Phones & PDAs no se encuentra habilitado') 
         self._click(phones_option)
+        
+        #def back_landingpage(self,url):
+        #self._driver.get(url)

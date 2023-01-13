@@ -29,7 +29,7 @@ class BasePage:
             self.take_screenshot(datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
             raise AssertionError(f'{mensaje}')
 
-    def _get_element(self,by,locator) -> WebElement:
+    def _get_element(self,by,locator) -> WebElement|None:
         try:
             return self._driver.find_element(by,locator)
         except NoSuchElementException:
