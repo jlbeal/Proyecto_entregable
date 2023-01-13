@@ -57,7 +57,7 @@ def testCase3_login():
     myaccount_page.login(usuario, password)
     time.sleep(10)
 
-def testCase3_busqueda():
+#def testCase3_busqueda():
  #producto = 'Display'
  #busqueda_invalida_text = 'There is no product that matches the search criteria.'
  #menu_page = MenuPage(driver) 

@@ -42,7 +42,7 @@ def test_02_register():
     register_page.click_continue()
     time.sleep(2)
 
-def test03_login():
+def test_03_login():
     menu_page = MenuPage(driver)
     menu_page.click_my_account()
     menu_page.click_logout()
@@ -53,7 +53,7 @@ def test03_login():
     login_page.ingresar_password(password)
     time.sleep(2)
 
-def test_buscar_product():
+def test_04_buscar_product():
     price_iphone = '$123.20'
     titulo_iphone= 'iPhone'
 
@@ -71,7 +71,7 @@ def test_buscar_product():
 
 
 
-def test_search_tabs_monitors():
+def test_05_search_tabs_monitors():
 
     price_monitors = '$242.00'
     titulo_monitor = 'Samsung SyncMaster 941BW'
@@ -86,7 +86,7 @@ def test_search_tabs_monitors():
     product_page.verificar_precio_label(price_monitors)
     time.sleep(3)
 
-def test_search_tabs_cameras():
+def test_06_search_tabs_cameras():
 
     price_camera = '$98.00'
     titulo_camera = 'Canon EOS 5D'
@@ -101,7 +101,7 @@ def test_search_tabs_cameras():
     product_page.verificar_precio_label(price_camera)
     time.sleep(3)
 
-def test_search_tabs_phones():
+def test_07_search_tabs_phones():
 
     price_phone_htc = '$122.00'
     titulo_phone_htc = 'HTC Touch HD'
@@ -116,7 +116,7 @@ def test_search_tabs_phones():
     product_page.verificar_precio_label(price_phone_htc)
     time.sleep(3)
 
-def test_login_negativo():
+def test_08_login_negativo():
 
     confirmation_login_text = 'Warning: No match for E-Mail Address and/or Password.'
 
@@ -131,7 +131,7 @@ def test_login_negativo():
     time.sleep(2)
     login_page.verificar_confirmacion_login(confirmation_login_text)
 
-def test_register_email_duplicado():
+def test_09_register_email_duplicado():
 
     confirmation_text = 'Warning: E-Mail Address is already registered!'
     
@@ -152,7 +152,7 @@ def test_register_email_duplicado():
     register_page.verificar_confirmacion(confirmation_text)
     time.sleep(2)
 
-def testCase1_busqueda():
+def test_10_busqueda():
     producto = 'Display'
     busqueda_invalida_text = 'There is no product that matches the search criteria.'
     menu_page = MenuPage(driver) 
