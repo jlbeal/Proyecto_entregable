@@ -3,5 +3,13 @@
   "tests/tests_final.py::test_checkout_product_guess": true,
   "tests/tests_final.py::test_no_product_shopping_cart": true,
   "tests/tests_final.py::test_eliminar_product_shopping_cart": true,
-  "tests/tests_final.py::test_fulfillment_2": true
+  "tests/tests_final.py::test_fulfillment_2": true,
+  "tests/tests_final.py::test_03_login": true,
+  "tests/tests_final.py::test_04_buscar_product": true,
+  "tests/tests_final.py::test_05_search_tabs_monitors": true,
+  "tests/tests_final.py::test_06_search_tabs_cameras": true,
+  "tests/tests_final.py::test_07_search_tabs_phones": true,
+  "tests/tests_final.py::test_08_login_negativo": true,
+  "tests/tests_final.py::test_09_register_email_duplicado": true,
+  "tests/tests_final.py::test_10_busqueda": true
 }
