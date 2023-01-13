@@ -16,7 +16,7 @@ driver = f_driver.get_driver()
 
 first_name = 'Jose Luis'
 last_name = 'test1'
-email = 'joseluis.ba@gmail.com'
+email = 'joseluis123@gmail.com'
 telephone = '1239393333'
 password = 'test12'
 
